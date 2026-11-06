@@ -4,5 +4,4 @@
 node_modules
 data
 bin
-cookies*.txt
 npm-debug.log*
