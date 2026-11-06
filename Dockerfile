@@ -7,9 +7,8 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --chown=node:node . .
+COPY . .
 
-USER node
 RUN npm ci --omit=dev
 
 CMD ["node", "index.js"]
